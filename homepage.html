@@ -4,52 +4,123 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Dushen</title>
 </head>
 <body>
   <!-- header -->
   <header>
-      <nav>
-        <h2>Dushen</h2>
-        <a href="">About</a>
-        <a href="">Projects</a>
-        <a href="">Contact</a>
-      </nav>
+      <div class="d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Dushen</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
   </header>
   <!-- header end -->
   <!-- main -->
-  <main>
+  <main class="px-5">
     <!-- section title -->
-    <section class="title">
-      <article>
-        <h1>
+    <section class="sec-title pt-6 d-flex align-items-center">
+      <article class="col-6 d-flex flex-column">
+        <h1 class="text-wrap">
           Hello! <br>
           I'm <span>Dushen</span>, a Junior web developer in Paris.
         </h1>
-        <a href="">Background</a>
-        <button>Work with me</button>
+        <a href="#about" class="text-end text-success pb-2">Background >></a>
+        <button class="btn btn-outline-success col-md-auto">Work with me</button>
       </article>
     </section>
     <!-- section title end -->
     <!-- section background-->
-    <section class="background">
-      <article>
-        <h2>
-          Background --->
-        </h2>
-      </article>
-      <article>
-        <p>
-          I'm Dushen, currently a student studying fullstack web developing at Konexio in Paris. I've done my advanced level examinations in Sri lanka and moved to France in 2019. Since then i've studied web developing in my leasure time and i found it very interesting. <br>
-          So i started to learn more & more.
+    <section class="sec-about background d-flex flex-row row pt-5 ps-5" id="about">
+      <h5 class="col-3">
+        Background >>
+      </h5>
+      <article class="col-5">
+        <p class="text-wrap">
+          I'm Dushen, currently a student studying <span class="">fullstack web developing</span> at Konexio in Paris. I've done my advanced level examinations in Sri lanka and moved to France in 2019. Since then i've studied web developing in my leasure time and i found it very interesting. <br>
+          So I kept learning more & more. <br>
+          Apart from that I'm a good cricketer. <img src="./images/winking-face.png" alt="wink wink" height="20px">
         </p>
-        <a href="">View my resume</a>
+        <a href="./images/Dushen CV 10-05-2022 VIII.pdf" target="_blank">View my resume</a>
       </article>
-
     </section>
     <!-- section background end-->
-
+    <!-- section skills -->
+    <section class="skills pt-5 ps-5">
+      <article class="background d-flex flex-row justify-content-center row my-5">
+        <div class="d-flex flex-row flex-wrap col-5">
+          <div class="pe-5">
+            <img src="./images/html-5.png" alt="html/css">
+            <p>HTML/CSS</p>
+          </div>
+          <div class="pe-5">
+            <img src="./images/js.png" alt="Js">
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="col-3">
+          <h5>My skills</h5>
+        </div>
+      </article>
+      <article class="background d-flex flex-row justify-content-center row pt-5">
+        <h5 class="col-3 me-5">
+          Skills I'm still learning
+        </h5>
+        <div class="col-5 d-flex flex-row flex-wrap">
+          <div class="pe-3">
+            <img src="./images/react.png" alt="react">
+            <p>
+              React JS
+            </p>
+          </div>
+          <div class="pe-3">
+            <img src="./images/node-js.png" alt="node">
+            <p>
+              Node JS
+            </p>
+          </div>
+          <div class="pe-3">
+            <img src="" alt="Express">
+            <p>
+              Express
+            </p>
+          </div>
+          <div class="pe-3">
+            <img src="" alt="mongo">
+            <p>
+              Mongo DB
+            </p>
+          </div>
+          <div class="pe-3">
+            <img src="./images/sql-server.png" alt="sql">
+            <p>
+              SQL
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- section skills end -->
   </main>
 
   <!-- main end -->
