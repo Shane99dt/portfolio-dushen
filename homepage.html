@@ -12,7 +12,7 @@
   <!-- header -->
   <header>
       <div class="d-flex justify-content-center">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -51,9 +51,9 @@
     </section>
     <!-- section title end -->
     <!-- section background-->
-    <section class="sec-about background d-flex flex-row row pt-5 ps-5" id="about">
+    <section class="sec-about background d-flex flex-row justify-content-center align-items-center" id="about">
       <h5 class="col-3">
-        Background >>
+        Background
       </h5>
       <article class="col-5">
         <p class="text-wrap">
@@ -66,8 +66,8 @@
     </section>
     <!-- section background end-->
     <!-- section skills -->
-    <section class="skills pt-5 ps-5">
-      <article class="background d-flex flex-row justify-content-center row my-5">
+    <section class="sec-skills py-5 ps-5">
+      <article class="my-skills background d-flex flex-row justify-content-center row my-5">
         <div class="d-flex flex-row flex-wrap col-5">
           <div class="pe-5">
             <img src="./images/html-5.png" alt="html/css">
@@ -79,39 +79,39 @@
           </div>
         </div>
         <div class="col-3">
-          <h5>My skills</h5>
+          <h5 class="skills-title">My skills</h5>
         </div>
       </article>
-      <article class="background d-flex flex-row justify-content-center row pt-5">
-        <h5 class="col-3 me-5">
+      <article class="skills-learning background d-flex flex-row justify-content-center row pt-5">
+        <h5 class="col-3 me-5 skills-title">
           Skills I'm still learning
         </h5>
         <div class="col-5 d-flex flex-row flex-wrap">
-          <div class="pe-3">
+          <div class="pe-5">
             <img src="./images/react.png" alt="react">
             <p>
               React JS
             </p>
           </div>
-          <div class="pe-3">
+          <div class="pe-5">
             <img src="./images/node-js.png" alt="node">
             <p>
               Node JS
             </p>
           </div>
-          <div class="pe-3">
-            <img src="" alt="Express">
+          <div class="pe-5">
+            <img src="./images/icons8-github-30.png" alt="git">
             <p>
-              Express
+              Github
             </p>
           </div>
-          <div class="pe-3">
-            <img src="" alt="mongo">
+          <div class="pe-5">
+            <img src="./images/mongo.png" alt="mongo" height="64px">
             <p>
               Mongo DB
             </p>
           </div>
-          <div class="pe-3">
+          <div class="pe-5">
             <img src="./images/sql-server.png" alt="sql">
             <p>
               SQL
@@ -121,6 +121,42 @@
       </article>
     </section>
     <!-- section skills end -->
+    <!-- Projects -->
+    <section class="sec-projects d-flex flex-row justify-content-center align-items-center" id="projects">
+      <h5 class="projects-title">Projects</h5>
+      <article class="">
+        <div class="">cui'zine</div>
+        <div>deezer</div>
+        <div>cv</div>
+      </article>
+    </section>
+    <!-- Projects end -->
+    <!-- section contact -->
+    <section class="sec-contact d-flex flex-row justify-content-center my-4 align-items-center" id="contact">
+      <div>
+        <form action="get" class="d-flex flex-column me-5">
+          <div class="d-inline-flex flex-row justify-content-center align-items-start">
+            <div class="labels d-flex flex-column justify-content-start align-items-start gap-4">
+              <label for="name" class="pe-5">Name</label>
+              <label for="email" class="pe-5">E-mail</label>
+              <label for="reason" class="align-self-start pe-5 ">So what is this about</label>
+            </div>
+            <div class="input-boxes d-flex flex-column justify-content-start align-items-start gap-3">
+              <input type="text" id="name" class="" required placeholder="Your name...">
+              <input type="email" id="email" required placeholder="E-mail...">
+              <textarea name="reason" id="reason" cols="30" rows="5" required placeholder="Tell me what is this about..."></textarea>
+            </div>
+          </div>
+          <button class="btn btn-secondary align-self-center my-3 px-5">Send</button>
+        </form>
+        <div>
+          <a href="https://github.com/Shane99dt"><img src="./images/icons8-github-30.png" alt="github" height="30px"></a>
+          <a href="https://www.linkedin.com/in/dushen-manikbowe-1b72571b9/"><img src="./images/linkedin.png" height="30px" alt="linkedin"></a>
+        </div>
+      </div>
+      <h5 class="contact-title">Contact me</h5>
+    </section>
+    <!-- section contact end -->
   </main>
 
   <!-- main end -->

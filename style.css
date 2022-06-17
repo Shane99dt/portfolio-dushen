@@ -3,9 +3,38 @@ body{
 }
 
 main .sec-title{
-  height: 600px;
+  height: 768px;
+}
+
+
+.sec-about{
+  height: 768px;
 }
 
 .sec-about{
-  height: 400px;
+  background-color: #aa9fb1;
+}
+
+.sec-skills{
+  height: 768px;
+  background-color: #A09ABC;
+}
+
+
+.sec-contact{
+  height: 768px;
+  background-color: #D4BEBE;
+}
+
+.sec-projects{
+  height: 768px;
+  background-color: #E1DEE9;
+}
+
+.projects-title{
+  transform: rotate(270deg) scale(5);
+}
+
+.contact-title{
+  transform: rotate(90deg) scale(5);
 }
