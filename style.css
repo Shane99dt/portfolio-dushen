@@ -9,9 +9,6 @@ main .sec-title{
 
 .sec-about{
   height: 768px;
-}
-
-.sec-about{
   background-color: #aa9fb1;
 }
 
@@ -27,7 +24,7 @@ main .sec-title{
 }
 
 .sec-projects{
-  height: 768px;
+  height: 100%;
   background-color: #E1DEE9;
 }
 
@@ -37,4 +34,53 @@ main .sec-title{
 
 .contact-title{
   transform: rotate(90deg) scale(5);
+}
+
+
+
+/* responsive */
+
+@media (max-width:767px){
+
+  .navigation nav{
+    display: flex;
+    justify-content: center;
+  }
+
+  .sec-projects{
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .sec-title, .sec-about, .sec-skills, .sec-contact{
+    height: 100%;
+  }
+
+  .sec-title{
+    width: auto;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .sec-about{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .sec-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sec-projects h5{
+    transform: none;
+    transform: scale(4);
+    width: auto;
+  }
+
+  .sec-contact h5{
+    transform: none;
+  }
 }
