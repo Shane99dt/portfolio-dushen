@@ -74,13 +74,17 @@ main .sec-title{
     justify-content: center;
   }
 
+  .sec-projects article{
+    width: 90%;
+    overflow-x: scroll;
+  }
+
   .sec-projects h5{
     transform: none;
-    transform: scale(4);
     width: auto;
   }
 
-  .sec-contact h5{
+  .sec-contact .contact-title{
     transform: none;
   }
 }
