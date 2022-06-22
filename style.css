@@ -82,9 +82,24 @@ main .sec-title{
   .sec-projects h5{
     transform: none;
     width: auto;
+    font-size: 30px;
   }
 
   .sec-contact .contact-title{
     transform: none;
   }
+
+  .sec-about h5{
+    font-size: 30px;
+  }
+
+  .sec-contact h5{
+    font-size: 30px;
+  }
+
+  .sec-skills h5{
+    font-size: 30px;
+  }
+
+
 }
