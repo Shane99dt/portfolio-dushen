@@ -49,7 +49,9 @@
           I'm <span>Dushen</span>, a Junior web developer in Paris.
         </h1>
         <a href="#about" class="text-end text-success pb-2">Background >></a>
-        <button class="btn btn-outline-success col-md-auto">Work with me</button>
+        <a href="#contact" class="btn btn-outline-success col-md-auto">
+          Work with me
+        </a>
       </article>
     </section>
     <!-- section title end -->
@@ -80,14 +82,6 @@
             <img src="./images/js.png" alt="Js">
             <p>JavaScript</p>
           </div>
-        </div>
-        <h5 class="skills-title col-md-3 pb-sm-2 pb-3">My skills</h5>
-      </article>
-      <article class="skills-learning d-flex flex-md-row justify-content-center flex-column justify-content-center align-items-center flex-sm-column pt-5 align-items-sm-center">
-        <h5 class="col-md-3 col-9 me-md-5 skills-title  pb-sm-2 pb-3">
-          Skills I'm still learning
-        </h5>
-        <div class="col-md-5 col-9 d-flex flex-row flex-wrap">
           <div class="pe-5">
             <img src="./images/react.png" alt="react">
             <p>
@@ -106,6 +100,14 @@
               Github
             </p>
           </div>
+        </div>
+        <h5 class="skills-title col-md-3 pb-sm-2 pb-3">My skills</h5>
+      </article>
+      <article class="skills-learning d-flex flex-md-row justify-content-center flex-column justify-content-center align-items-center flex-sm-column pt-5 align-items-sm-center">
+        <h5 class="col-md-3 col-9 me-md-5 skills-title  pb-sm-2 pb-3">
+          Skills I'm still learning
+        </h5>
+        <div class="col-md-5 col-9 d-flex flex-row flex-wrap">
           <div class="pe-5">
             <img src="./images/mongo.png" alt="mongo" height="64px">
             <p>
@@ -126,6 +128,46 @@
     <section class="sec-projects d-flex flex-sm-column flex-md-row justify-content-center align-items-center gap-md-5 gap-sm-3 py-md-5 justify-content-sm-center py-sm-5" id="projects">
       <h5 class="projects-title p-md-0 py-3">Projects</h5>
       <article class="d-flex flex-grow-md-0 flex-md-wrap gap-md-5 col-md-8 ps-md-5 gap-sm-3 gap-5 col-9 ps-5 gap-3">
+        <div class="d-md-inline-flex flex-md-row justify-content-md-center">
+          <img src="./images/2048/2048.png" alt="2048" height="250px">
+          <div class="ps-md-5 pt-sm-3 pt-3">
+            <h6>2048</h6>
+            <p>This is the first project for groups of more than two. We cloned the game 2048 with our own way in React.JS</p>
+            <a href="https://2048-by-the-best.netlify.app/" class="btn btn-secondary" target="_blank">Check out</a>
+          </div>
+        </div>
+        <div class="d-md-inline-flex flex-md-row justify-content-md-center">
+          <img src="./images/moovice/moovice-6.png" alt="moovice" height="250px">
+          <div class="ps-md-5 pt-sm-3 pt-3">
+            <h6>Moovice</h6>
+            <p>In this project I got an API which is filled with TV series and movies. This is one of my favorite projects, because of the freedom we had while doing this.</p>
+            <a href="https://moovice-dt.netlify.app/" class="btn btn-secondary" target="_blank">Check out</a>
+          </div>
+        </div>
+        <div class="d-md-inline-flex flex-md-row justify-content-md-center">
+          <img src="./images/to do list react/todolist-react2.png" alt="moovice" height="250px">
+          <div class="ps-md-5 pt-sm-3 pt-3">
+            <h6>To-Do List</h6>
+            <p>This to do list is constructed with react.js which was pretty simple rather than the to do list with pure js.</p>
+            <a href="https://todo-list-react-dt.netlify.app/" class="btn btn-secondary" target="_blank">Check out</a>
+          </div>
+        </div>
+        <div class="d-md-inline-flex flex-md-row justify-content-md-center">
+          <img src="./images/pokemon api/pokemon.png" alt="pokemon" height="250px">
+          <div class="ps-md-5 pt-sm-3 pt-3">
+            <h6>pokemon</h6>
+            <p>This is the first project that we had to deal with an API to get the details and play with it. The exrcise was to get a random pokemen each time.</p>
+            <a href="https://pokemon-dt.netlify.app/" class="btn btn-secondary" target="_blank">Check out</a>
+          </div>
+        </div>
+        <div class="d-md-inline-flex flex-md-row justify-content-md-center">
+          <img src="./images/Todo list js/todolist2.png" alt="pokemon" height="250px">
+          <div class="ps-md-5 pt-sm-3 pt-3">
+            <h6>To do list</h6>
+            <p>This to do list is constructed by pure js. Also a group project of two.</p>
+            <a href="https://shane99dt.github.io/toDoList/" class="btn btn-secondary" target="_blank">Check out</a>
+          </div>
+        </div>
         <div class="d-md-inline-flex flex-md-row justify-content-md-center">
           <img src="./images/cuizine.jpg" alt="cuizine" height="250px">
           <div class="ps-md-5 pt-sm-3 pt-3">
@@ -172,22 +214,22 @@
               <label for="reason" class="align-self-start pe-5 ">So what is this about</label>
             </div>
             <div class="input-boxes d-flex flex-column justify-content-sm-start justify-content-center align-items-sm-start gap-3 align-items-center">
-              <input type="text" id="name" class="" required placeholder="Your name...">
+              <input type="text" id="name" required placeholder="Your name...">
               <input type="email" id="email" required placeholder="E-mail...">
               <textarea name="reason" id="reason" cols="30" rows="5" required placeholder="Tell me what is this about..."></textarea>
             </div>
           </div>
           <button class="btn btn-secondary align-self-center my-3 px-5">Send</button>
         </form>
-        <div class="px-5 p-sm-0">
+        <div class="px-5 py-sm-0 px-sm-4">
           <h5>Tired of filling out forms? Send me an <a href="mailto:dushen1999thilaksha@gmail.com">e-mail</a>.</h5>
         </div>
-        <div class="d-inline-flex gap-3 justify-content-center justify-content-sm-start">
+        <div class="d-inline-flex gap-3 justify-content-center justify-content-sm-start py-sm-0 px-sm-4">
           <a href="https://github.com/Shane99dt" target="_blank"><img src="./images/icons8-github-30.png" alt="github" height="30px"></a>
           <a href="https://www.linkedin.com/in/dushen-manikbowe-1b72571b9/" target="_blank"><img src="./images/linkedin.png" height="30px" alt="linkedin"></a>
         </div>
       </div>
-      <h5 class="contact-title py-3 p-sm-0">Contact me</h5>
+      <h5 class="contact-title py-3 p-sm-0" >Contact me</h5>
     </section>
     <!-- section contact end -->
   </main>
