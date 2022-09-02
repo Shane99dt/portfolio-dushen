@@ -206,7 +206,7 @@
     <!-- section contact -->
     <section class="sec-contact d-flex flex-md-row flex-column-reverse flex-sm-column-reverse justify-content-center align-items-center py-sm-5 pb-5" id="contact">
       <div class="d-flex gap-3 flex-column justify">
-        <form action="get" class="d-flex flex-column me-5">
+        <form class="d-flex flex-column me-5" onsubmit="event.preventDefault(); onClickSend()">
           <div class="d-inline-flex flex-row justify-content-center align-items-sm-start align-items-center">
             <div class="labels-contact d-none d-sm-flex flex-column justify-content-start align-items-start gap-4">
               <label for="name" class="pe-5">Name</label>
@@ -219,7 +219,7 @@
               <textarea name="reason" id="reason" cols="30" rows="5" required placeholder="Tell me what is this about..."></textarea>
             </div>
           </div>
-          <button class="btn btn-secondary align-self-center my-3 px-5">Send</button>
+          <button class="btn btn-secondary align-self-center my-3 px-5" type="submit">Send</button>
         </form>
         <div class="px-5 py-sm-0 px-sm-4">
           <h5>Tired of filling out forms? Send me an <a href="mailto:dushen1999thilaksha@gmail.com">e-mail</a>.</h5>
