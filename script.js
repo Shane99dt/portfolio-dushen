@@ -1,5 +1,7 @@
-window.alert("This portfolio is still on the way to a better build. Enjoy your time here now!");
-
+function onClickNotice() {
+  const noticeSection = document.getElementById("notice");
+  noticeSection.style.display = "none";
+}
 
 function onClickSend() {
   alert("Please send an e-mail");
